@@ -1,0 +1,2160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from dragracing.space/finder by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 20 Sep 2023 12:29:59 GMT -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+    <title>Team search in CSR Racing 2 — Find Your Crew</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico"/>
+    <!-- BEGIN GLOBAL MANDATORY STYLES -->
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,600,700&amp;display=swap" rel="stylesheet">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/plugins.css" rel="stylesheet" type="text/css" />
+    <!-- END GLOBAL MANDATORY STYLES -->
+    
+    <!-- BEGIN PAGE LEVEL STYLES -->
+    <link rel="stylesheet" type="text/css" href="plugins/table/datatable/datatables.css">
+    <link rel="stylesheet" type="text/css" href="plugins/table/datatable/dt-global_style.css">
+    <!-- END PAGE LEVEL STYLES -->
+	
+    <!-- BEGIN THEME GLOBAL STYLES -->
+    <link href="plugins/flatpickr/flatpickr.css" rel="stylesheet" type="text/css">
+    <link href="plugins/noUiSlider/nouislider.min.css" rel="stylesheet" type="text/css">
+    <!-- END THEME GLOBAL STYLES -->
+
+    <!--  BEGIN CUSTOM STYLE FILE  -->
+    <link href="assets/css/scrollspyNav.css" rel="stylesheet" type="text/css" />
+    <link href="plugins/flatpickr/custom-flatpickr.css" rel="stylesheet" type="text/css">
+    <link href="plugins/noUiSlider/custom-nouiSlider.css" rel="stylesheet" type="text/css">
+    <link href="plugins/bootstrap-range-Slider/bootstrap-slider.css" rel="stylesheet" type="text/css">
+    <!--  END CUSTOM STYLE FILE  -->
+	
+	
+	  <!--Plugin CSS file with desired skin-->
+    <link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css"/>
+	<link href="plugins/loaders/custom-loader.css" rel="stylesheet" type="text/css" />
+    
+
+    
+
+	
+	
+	
+    <style type="text/css">
+        .table-responsive > .table {
+            background: transparent;
+        }
+    </style>
+</head>
+
+
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" type="text/css" href="plugins/font-icons/fontawesome/css/regular.css">
+    <link rel="stylesheet" type="text/css" href="plugins/font-icons/fontawesome/css/fontawesome.css">
+	
+	
+<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-168573656-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-168573656-1');
+		</script>
+		<!-- Google Tag Manager -->
+		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-PSQ75N7');</script>
+		<!-- End Google Tag Manager -->
+		
+		<body>
+		
+		
+				<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PSQ75N7"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+		
+    <!--  BEGIN NAVBAR  -->
+    <div class="header-container">
+        <header class="header navbar navbar-expand-sm">
+
+            <a href="javascript:void(0);" class="sidebarCollapse" data-placement="bottom"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></a>
+
+            <div class="nav-logo align-self-center">
+                <a class="navbar-brand" href="index.html"><!--<img alt="logo" src="/assets/img/logo.png" style="height:40px; width: auto;"> --><span class="navbar-brand-name">DRAG <span style="color:red;">RACING</span>:db </span></a>
+            </div>
+<style> 
+.search_box {
+	position: relative;
+}
+.search_box input[type="text"] {
+	display: block;
+	width: 100%;    
+	height: 35px;
+	line-height: 35px;
+	padding: 0;
+	margin: 0;
+	border: 1px solid #fd4836;
+	outline: none;
+	overflow: hidden;
+	border-radius: 4px;
+	background-color: rgb(255, 255, 255);
+	text-indent: 15px;
+	font-size: 14px;
+	color: #222;
+}
+.search_box input[type="submit"] {
+	display: inline-block;
+	width: 17px;
+	height: 17px;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	outline: 0;
+	overflow: hidden;
+	text-indent: -999px;
+	background: url(../snipp.ru/demo/127/search.png) 0 0 no-repeat;
+	position: absolute;
+	top: 9px;
+	right: 16px;
+}
+ 
+/* Стили для плашки с результатами */
+.search_result {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	border: 1px solid #ddd;
+	background: #fff;
+	padding: 10px;
+	z-index: 9999;
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+</style>
+
+<!--
+<div class="search_box">
+	<form action="/" method="POST">
+		<input type="text" name="search" id="search" placeholder="CARS">
+		<input type="submit">			
+	</form>
+	<div id="search_box-result"></div>
+</div>
+-->
+           <!-- <ul class="navbar-item flex-row mr-auto">
+                <li class="nav-item align-self-center search-animated">
+                    <form class="form-inline search-full form-inline search" action="#">
+                        <div class="search-bar search_box">
+                            <input type="text" name="" id="" class="form-control search-form-control  ml-lg-auto" placeholder="Search...">
+                        </div>
+                    </form>
+					
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search toggle-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                </li>
+            </ul>  -->
+			
+			<ul class="navbar-item flex-row mr-auto">
+                <li class="nav-item align-self-center search-animated">
+<!--         
+<div class="marquiz__container d-none d-sm-none d-md-block">
+  <a class="marquiz__button marquiz__button_blicked marquiz__button_rounded marquiz__button_shadow" href="#popup:marquiz_5f413604bcf1200044d86458" data-fixed-side="" data-alpha-color="rgba(223, 186, 52, 0.5)" data-color="#dfba34" data-text-color="#ffffff">How to buy maxed out cars</a>
+</div>	-->			
+					
+				</li>
+            </ul>
+
+
+
+            <ul class="navbar-item flex-row nav-dropdowns">
+                <!-- LANGUAGE SELECTOR
+                <li class="nav-item dropdown language-dropdown more-dropdown">
+                    <div class="dropdown custom-dropdown-icon">
+                        <a class="dropdown-toggle btn" href="#" role="button" id="customDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="/assets/img/ca.png" class="flag-width" alt="flag"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
+
+                        <div class="dropdown-menu dropdown-menu-right animated fadeInUp" aria-labelledby="customDropdown">
+                            <a class="dropdown-item" data-img-value="de" data-value="de" href="javascript:void(0);"><img src="/assets/img/de.png" class="flag-width" alt="flag"> German</a>
+                            <a class="dropdown-item" data-img-value="jp" data-value="jp" href="javascript:void(0);"><img src="/assets/img/jp.png" class="flag-width" alt="flag"> -Japanese</a>
+                            <a class="dropdown-item" data-img-value="fr" data-value="fr" href="javascript:void(0);"><img src="/assets/img/fr.png" class="flag-width" alt="flag"> French</a>
+                            <a class="dropdown-item" data-img-value="ca" data-value="en" href="javascript:void(0);"><img src="/assets/img/ca.png" class="flag-width" alt="flag"> English</a>
+                        </div>
+                    </div>
+                </li>
+               -->
+                 <li class="nav-item dropdown message-dropdown">
+                    <a href="javascript:void(0);" class="nav-link dropdown-toggle"    id="messageDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-cart"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+                                            </a>
+                    <div class="dropdown-menu p-0 position-absolute animated fadeInUp" aria-labelledby="messageDropdown">
+
+
+
+
+ 
+
+
+    <span href="cars.html" class="text-center custom-alert-1">CART EMPTY</span> <hr/>
+    <a href="cars.html" class="btn btn-succes btn-lg custom-alert-1" style="width:200px;">BUY CARS</a> <hr/>
+    <a href="cars.html" class="btn btn-succes btn-lg custom-alert-1" style="width:200px;">BUY KEYS</a> <hr/>
+    <p class="text-center"> DOWNLAD PDF PRICE</p>
+
+
+
+
+
+
+
+
+                            <!--<a class="dropdown-item">
+                                <div class="">
+                                    <div class="media">
+                                        <div class="user-img">
+                                            <div class="avatar avatar-xl">
+                                                <span class="avatar-title rounded-circle">DA</span>
+                                            </div>
+                                        </div>
+                                        <div class="media-body">
+                                            <div class="">
+                                                <h5 class="usr-name">Daisy Anderson</h5>
+                                                <p class="msg-title">ACCOUNT UPDATE</p>
+                                            </div>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                            </a>
+                            <a class="dropdown-item">
+                                <div class="">
+
+                                    <div class="media">
+                                        <div class="user-img">
+                                            <div class="avatar avatar-xl">
+                                                <span class="avatar-title rounded-circle">OG</span>
+                                            </div>
+                                        </div>
+                                        <div class="media-body">
+                                            <div class="">
+                                                <h5 class="usr-name">Oscar Garner</h5>
+                                                <p class="msg-title">ACCOUNT UPDATE</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </a>-->
+                    </div>
+                </li>
+                <!-- NOTIFICATION DROPDOWN 
+                <li class="nav-item dropdown notification-dropdown">
+                    <a href="javascript:void(0);" class="nav-link dropdown-toggle" id="notificationDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bell"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg><span class="badge badge-success"></span>
+                    </a>
+                    <div class="dropdown-menu position-absolute animated fadeInUp" aria-labelledby="notificationDropdown">
+                        <div class="notification-scroll">
+
+                            <div class="dropdown-item">
+                                <div class="media server-log">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-server"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6" y2="6"></line><line x1="6" y1="18" x2="6" y2="18"></line></svg>
+                                    <div class="media-body">
+                                        <div class="data-info">
+                                            <h6 class="">Server Rebooted</h6>
+                                            <p class="">45 min ago</p>
+                                        </div>
+
+                                        <div class="icon-status">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="dropdown-item">
+                                <div class="media ">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                                    <div class="media-body">
+                                        <div class="data-info">
+                                            <h6 class="">Licence Expiring Soon</h6>
+                                            <p class="">8 hrs ago</p>
+                                        </div>
+
+                                        <div class="icon-status">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="dropdown-item">
+                                <div class="media file-upload">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                                    <div class="media-body">
+                                        <div class="data-info">
+                                            <h6 class="">Price for keys and cars.pdf</h6>
+                                            <p class="">670 kb</p>
+                                        </div>
+
+                                        <div class="icon-status">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                  -->
+
+                				
+				<li class="nav-item dropdown user-profile-dropdown order-lg-0 order-1">
+                    <a href="javascript:void(0);" class="nav-link dropdown-toggle user" id="user-profile-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <div class="media">
+                            <img src="assets/img/90x90.jpg" class="img-fluid" alt="admin-profile"  id="profile-tour">
+                            <div class="media-body align-self-center">
+                                <h6><span>Log in / Sign up</span></h6>
+                            </div>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </a>
+					
+                    <div class="dropdown-menu position-absolute animated fadeInUp" aria-labelledby="user-profile-dropdown">
+                        <div class="">
+                            <div class="dropdown-item">
+                                <a class="" href="auth_login.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-key"><path d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4"></path></svg> Log In</a>
+                            </div>
+                            <div class="dropdown-item">
+                                <a class="" href="auth_register.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user-plus"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="8.5" cy="7" r="4"></circle><line x1="20" y1="8" x2="20" y2="14"></line><line x1="23" y1="11" x2="17" y2="11"></line></svg> Sign Up</a>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                </li>
+                                        		
+												
+                                			
+                                        		
+                											
+            </ul>
+        </header>
+    </div>
+    <!--  END NAVBAR  -->
+
+    <!--  BEGIN MAIN CONTAINER  -->
+    <div class="main-container" id="container">
+
+        <div class="overlay"></div>
+        <div class="search-overlay"></div>
+
+        <!--  BEGIN TOPBAR  -->
+        <div class="topbar-nav header navbar" role="banner">
+            <nav id="topbar">
+                <ul class="navbar-nav theme-brand flex-row  text-center">
+                    <li class="nav-item theme-logo">
+                        <a href="index-2.html">
+                            <img src="404.html" style="height:40px; width: auto;" class="navbar-logo" alt="logo" />
+                        </a>
+                    </li>
+                    <li class="nav-item theme-text">
+                        <a href="index-2.html" class="nav-link"> CREWS </a>
+                    </li>
+                </ul>
+
+                <ul class="list-unstyled menu-categories" id="topAccordion">
+
+                    <li class="menu single-menu active">
+                        <a href="index-2.html" aria-expanded="false" >
+                            <div class="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+                                <span data-i18n="Dashboard" class="">Home</span>
+                            </div>
+                        </a>
+                    </li>
+
+
+                    <li class="menu single-menu">
+                        <a href="cars.html" >
+                            <div class=""  id="cars-tour">
+<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="car" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-car fa-w-16"><path fill="currentColor" d="M499.99 176h-59.87l-16.64-41.6C406.38 91.63 365.57 64 319.5 64h-127c-46.06 0-86.88 27.63-103.99 70.4L71.87 176H12.01C4.2 176-1.53 183.34.37 190.91l6 24C7.7 220.25 12.5 224 18.01 224h20.07C24.65 235.73 16 252.78 16 272v48c0 16.12 6.16 30.67 16 41.93V416c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32v-32h256v32c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32v-54.07c9.84-11.25 16-25.8 16-41.93v-48c0-19.22-8.65-36.27-22.07-48H494c5.51 0 10.31-3.75 11.64-9.09l6-24c1.89-7.57-3.84-14.91-11.65-14.91zm-352.06-17.83c7.29-18.22 24.94-30.17 44.57-30.17h127c19.63 0 37.28 11.95 44.57 30.17L384 208H128l19.93-49.83zM96 319.8c-19.2 0-32-12.76-32-31.9S76.8 256 96 256s48 28.71 48 47.85-28.8 15.95-48 15.95zm320 0c-19.2 0-48 3.19-48-15.95S396.8 256 416 256s32 12.76 32 31.9-12.8 31.9-32 31.9z" class=""></path></svg>
+                               <span>CAR TUNES & TIMES</span>
+                            </div>
+                        </a>
+                    </li>
+                    
+                                        <li class="menu single-menu" id="crews-tour">
+                        <a href="shop.html" aria-expanded="false">
+                            <div class="">
+								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-layout"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>
+                                <span><font color=gold>SHOP</font></span>
+                            </div>
+                            
+                        </a>
+					</li>
+					
+                    <li class="menu single-menu" id="crews-tour">
+                        <a href="blog.html" aria-expanded="false">
+                            <div class="">
+								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-layout"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>
+                                <span>BLOG</span>
+                            </div>
+                            
+                        </a>
+					</li>
+
+					<li class="menu single-menu" id="crews-tour">
+                        <a href="finder.html" aria-expanded="false">
+                            <div class="">
+								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-users"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+								<span>CREWS</span>
+                            </div>
+                            
+                        </a>
+					</li>
+	
+				
+										
+					
+										
+					
+					<!--
+										<li class="menu single-menu">
+                        <a href="/newcrew.html" >
+                            <div class=""  id="add_crew-tour">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus-circle"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line></svg>
+                                <span>NEW CREW</span>
+                            </div>
+                        </a>
+					</li>	
+                    					-->
+					
+					
+					
+					
+							
+							
+							
+
+					
+                    					<li class="menu single-menu">
+                        <a href="cars-new.html" >
+                            <div class=""  id="cars-tour">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-cart"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>                                <span>BUY CARS</span>
+                            </div>
+                        </a>
+					</li>
+                					
+					
+                  
+                    <li class="menu single-menu">
+                        <a href="calendar.html" >
+                            <div class="" id="calendar-tour">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar mr-2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                                <span>EVENTS</span>
+                            </div>
+                        </a>
+					</li>
+					
+                  
+                    <li class="menu single-menu">
+                        <a href="https://www.instagram.com/s/aGlnaGxpZ2h0OjE3OTg4Njk2OTYxMjM4Mjk5?utm_medium=copy_link" target="_blank" >
+                            <div class="" id="calendar-tour">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar mr-2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                                <span>Reviews</span>
+                            </div>
+                        </a>
+					</li>
+					
+					
+					
+                </ul>
+            </nav>
+        </div>
+        <!--  END TOPBAR  -->
+		
+		
+		
+		
+	
+
+
+<link rel="stylesheet" type="text/css" href="assets/css/elements/alert.css">
+
+
+
+
+
+
+
+
+
+
+
+    <!-- BEGIN THEME GLOBAL STYLES -->
+    <link href="assets/css/scrollspyNav.css" rel="stylesheet" type="text/css" />
+    <link href="plugins/animate/animate.css" rel="stylesheet" type="text/css" />
+    <script src="plugins/sweetalerts/promise-polyfill.js"></script>
+    <link href="plugins/sweet-alert2/sweetalert2.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/components/custom-sweetalert.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/components/tabs-accordian/custom-tabs.css" rel="stylesheet" type="text/css" />
+    <!-- END THEME GLOBAL STYLES -->
+
+        <!--  BEGIN CONTENT AREA  -->
+        <div id="content" class="main-content">
+            <div class="layout-px-spacing">
+
+                <div class="row layout-top-spacing" id="cancel-row">
+                
+				
+				
+				
+				
+				
+				
+
+
+
+	
+
+<div class="col-lg-5">
+					<form method="GET" action="http://dragracing.space/" accept-charset="UTF-8" class="form">
+						<div class="card m-b-30">
+                            <div class="card-header ">
+								<div class="input-group mb-3">
+						
+                                  <!--SEARCH HERE -->
+                                  <input input id="search" name="search" type="text" class="form-control" placeholder="Crew TAG or Name" aria-label="Ник блогера" aria-describedby="button-addon2">
+								  
+                                </div>
+                                
+                            </div>
+                            <div class="card-body row">
+ 
+  <style>
+  .badge-success  {
+    top: 11px;
+    right: 2px;
+    padding: 3px 0px 0px;
+    font-size: 10px;
+    color: #fff !important;
+    background: #2196f3;
+    display: block;
+    border: 2px solid rgba(14, 23, 38, 0.52);
+}
+
+</style>   
+
+<style>
+.checkimg img {
+  border: 2px solid #FFF;
+  margin: 2px;
+}
+
+.checkimg  [type=checkbox] {
+  display: none;
+}
+
+.checkimg  [type=checkbox]:checked + img {
+  border: 4px solid green;
+}
+</style>                        
+
+
+
+		<div class="col-md-12 col-sm-12 col-xs-12">
+		<h4>Respect Points (RP)</h4>
+				 <p class="filter-title">
+                    <label for="amount"><input type="hidden" id="amount" class="hidden" readonly style="border:0; color:#f6931f; font-weight:bold;"></label>
+                </p>
+                <div id="slider-range"></div>
+				</div>
+				
+
+
+
+
+
+<div class="col-md-12" style="margin-top:9px;">			
+<h4 class="card-title text-wite text-left">Crew language</h4>
+<div class="row container checkimg">
+
+                                                                        
+                                <label>
+								<input class="category" name="English" type="checkbox" value="1">
+                                <img src="https://gamewise.org/csr-racing-2-best-fastest-cars/" style="max-width: 40px;" alt="CSR 2 English teams"  class="bs-tooltip" title=""/>
+                                <span class="badge badge-success">(12)</span>
+								</label>
+                            
+                                                    
+                                <label>
+								<input class="category" name="Russian" type="checkbox" value="2">
+                                <img src="https://gamewise.org/csr-racing-2-best-fastest-cars/" style="max-width: 40px;" alt="CSR 2 Russian teams"  class="bs-tooltip" title=""/>
+                                <span class="badge badge-success">(3)</span>
+								</label>
+                            
+                                                    
+                                <label>
+								<input class="category" name="Italian" type="checkbox" value="3">
+                                <img src="https://gamewise.org/csr-racing-2-best-fastest-cars/" style="max-width: 40px;" alt="CSR 2 Italian teams"  class="bs-tooltip" title=""/>
+                                <span class="badge badge-success">(0)</span>
+								</label>
+                            
+                                                    
+                                <label>
+								<input class="category" name="German" type="checkbox" value="4">
+                                <img src="https://gamewise.org/csr-racing-2-best-fastest-cars/" style="max-width: 40px;" alt="CSR 2 German teams"  class="bs-tooltip" title=""/>
+                                <span class="badge badge-success">(1)</span>
+								</label>
+                            
+                                                    
+                                <label>
+								<input class="category" name="Arabic" type="checkbox" value="5">
+                                <img src="https://gamewise.org/csr-racing-2-best-fastest-cars/" style="max-width: 40px;" alt="CSR 2 Arabic teams"  class="bs-tooltip" title=""/>
+                                <span class="badge badge-success">(0)</span>
+								</label>
+                            
+                                                    
+                                <label>
+								<input class="category" name="Spanish" type="checkbox" value="6">
+                                <img src="https://gamewise.org/csr-racing-2-best-fastest-cars/" style="max-width: 40px;" alt="CSR 2 Spanish teams"  class="bs-tooltip" title=""/>
+                                <span class="badge badge-success">(0)</span>
+								</label>
+                            
+                                                    
+                                <label>
+								<input class="category" name="French" type="checkbox" value="7">
+                                <img src="https://gamewise.org/csr-racing-2-best-fastest-cars/" style="max-width: 40px;" alt="CSR 2 French teams"  class="bs-tooltip" title=""/>
+                                <span class="badge badge-success">(1)</span>
+								</label>
+                            
+                                                    
+                                <label>
+								<input class="category" name="Japanese" type="checkbox" value="9">
+                                <img src="https://gamewise.org/csr-racing-2-best-fastest-cars/" style="max-width: 40px;" alt="CSR 2 Japanese teams"  class="bs-tooltip" title=""/>
+                                <span class="badge badge-success">(0)</span>
+								</label>
+                            
+                                                    
+                                <label>
+								<input class="category" name="Korean" type="checkbox" value="10">
+                                <img src="https://gamewise.org/csr-racing-2-best-fastest-cars/" style="max-width: 40px;" alt="CSR 2 Korean teams"  class="bs-tooltip" title=""/>
+                                <span class="badge badge-success">(0)</span>
+								</label>
+                            
+                                                    
+                                <label>
+								<input class="category" name="Portuguese" type="checkbox" value="11">
+                                <img src="https://gamewise.org/csr-racing-2-best-fastest-cars/" style="max-width: 40px;" alt="CSR 2 Portuguese teams"  class="bs-tooltip" title=""/>
+                                <span class="badge badge-success">(0)</span>
+								</label>
+                            
+                                                    
+                                <label>
+								<input class="category" name="Thai" type="checkbox" value="12">
+                                <img src="https://gamewise.org/csr-racing-2-best-fastest-cars/" style="max-width: 40px;" alt="CSR 2 Thai teams"  class="bs-tooltip" title=""/>
+                                <span class="badge badge-success">(0)</span>
+								</label>
+                            
+                                                    
+                                <label>
+								<input class="category" name="Turkish" type="checkbox" value="13">
+                                <img src="https://gamewise.org/csr-racing-2-best-fastest-cars/" style="max-width: 40px;" alt="CSR 2 Turkish teams"  class="bs-tooltip" title=""/>
+                                <span class="badge badge-success">(1)</span>
+								</label>
+                            
+                                                    
+                                <label>
+								<input class="category" name="Chinese" type="checkbox" value="14">
+                                <img src="https://gamewise.org/csr-racing-2-best-fastest-cars/" style="max-width: 40px;" alt="CSR 2 Chinese teams"  class="bs-tooltip" title=""/>
+                                <span class="badge badge-success">(0)</span>
+								</label>
+                            
+                                                    
+                                <label>
+								<input class="category" name="WORLD" type="checkbox" value="15">
+                                <img src="https://gamewise.org/csr-racing-2-best-fastest-cars/" style="max-width: 40px;" alt="CSR 2 WORLD teams"  class="bs-tooltip" title=""/>
+                                <span class="badge badge-success">(4)</span>
+								</label>
+                            
+                                                             <!--   <a id="loadCat" style="color:blue;text-decoration: underline;cursor: pointer;">ALL languages</a> -->
+
+				</div>
+</div>	
+
+
+
+
+		</div>		
+
+<!--
+<button class="btn btn-primary my-1" type="button" data-toggle="collapse" data-target="#filter" aria-expanded="false" aria-controls="filter"><i class="mdi mdi-filter-outline"></i> OTHER FILTERS</button>
+<div class="collapse" id="filter" style="margin-top: 7px;">
+
+will be soon
+
+	
+				
+				
+					<div class="row">
+
+
+
+					
+
+				<div class="col-md-6">	
+				
+				<h5 class="card-title text-black text-center">Категории</h5>
+								 <ul class="filter-cat" id="collapseColor">
+                                            							<div>
+                                <input class="color" name="USA" type="checkbox" value="1">
+                                <label for="USA">USA                                <span>(1)</span></label>
+							</div>
+                        							<div>
+                                <input class="color" name="Россия" type="checkbox" value="2">
+                                <label for="Россия">Россия                                <span>(3)</span></label>
+							</div>
+                        							<div>
+                                <input class="color" name="Italia" type="checkbox" value="3">
+                                <label for="Italia">Italia                                <span>(18)</span></label>
+							</div>
+                        							<div>
+                                <input class="color" name="Львов" type="checkbox" value="4">
+                                <label for="Львов">Львов                                <span>(0)</span></label>
+							</div>
+                        							<div>
+                                <input class="color" name="Одесса" type="checkbox" value="5">
+                                <label for="Одесса">Одесса                                <span>(0)</span></label>
+							</div>
+                                            					
+					<script>
+$('.link_autodel').on('click', function (){
+  $(this).remove();	
+});
+</script>
+                    <a class="link_autodel" id="loadColor" style="color:blue;text-decoration: underline;cursor: pointer;">Все города</a>
+                </ul>
+				
+				</div>
+				
+				
+
+				
+								<select class="xp-select2-multi-select form-control" name="states[]" multiple="multiple" placeholder="Выбрать города">
+                                  <optgroup label="Украина">
+								                                              									</optgroup>
+                                </select>	
+								
+								
+				
+				
+				
+				<div class="col-md-6">
+				<h5 class="card-title text-black text-center">Пол</h5>
+                <ul class="filter-cat">
+                                                                        <div>
+                                <input class="type" name="Женщина" type="checkbox" value="2">
+                                <label for="Женщина">Женщина</label>
+                                <span>(1)</span>
+                            </div>
+                                                    <div>
+                                <input class="type" name="Мужчина" type="checkbox" value="1">
+                                <label for="Мужчина">Мужчина</label>
+                                <span>(0)</span>
+                            </div>
+                                                    <div>
+                                <input class="type" name="Паблик, другое" type="checkbox" value="3">
+                                <label for="Паблик, другое">Паблик, другое</label>
+                                <span>(21)</span>
+                            </div>
+                                            
+                </ul>
+				</div>
+
+
+
+
+
+</div> 
+
+
+
+
+				
+								
+								
+				
+								
+				
+				
+				
+				
+				
+
+				
+				
+				
+				
+				
+				
+				
+				
+				
+                <div class="filter-title"><a data-toggle="collapse" href="#collapseBrand" aria-expanded="false" aria-controls="collapseExample">Brand</a></div>
+                <ul class="filter-cat collapse" id="collapseBrand">
+                                                                        <li>
+                                <input class="brand" name="Adidas" type="checkbox" value="3">
+                                <label for="Adidas">Adidas</label>
+                                <span>(22)</span>
+                            </li>
+                                                    <li>
+                                <input class="brand" name="Apple" type="checkbox" value="12">
+                                <label for="Apple">Apple</label>
+                                <span>(0)</span>
+                            </li>
+                                                    <li>
+                                <input class="brand" name="ASICS" type="checkbox" value="10">
+                                <label for="ASICS">ASICS</label>
+                                <span>(0)</span>
+                            </li>
+                                                    <li>
+                                <input class="brand" name="Gucci" type="checkbox" value="2">
+                                <label for="Gucci">Gucci</label>
+                                <span>(0)</span>
+                            </li>
+                                                    <li>
+                                <input class="brand" name="H&M" type="checkbox" value="6">
+                                <label for="H&M">H&M</label>
+                                <span>(0)</span>
+                            </li>
+                                                                <li><a id="loadBrand" style="color:blue;text-decoration: underline;cursor: pointer;">Load More >>></a></li>
+                </ul>
+                
+                
+                <p class="filter-title"><a data-toggle="collapse" href="#collapseOffer" aria-expanded="false" aria-controls="collapseExample">Active Offers</a></p>
+                <ul class="filter-cat collapse" id="collapseOffer">
+                                                                        <li>
+                                <input class="offer" name="30% off" type="checkbox" value="2">
+                                <label for="30% off">30% off</label>
+                                <span>(0)</span>
+                            </li>
+                                                    <li>
+                                <input class="offer" name="Buy One Get One" type="checkbox" value="1">
+                                <label for="Buy One Get One">Buy One Get One</label>
+                                <span>(0)</span>
+                            </li>
+                                                                <li><a id="loadOffer" style="color:blue;text-decoration: underline;cursor: pointer;">Load More >>></a></li>
+                </ul>
+
+               
+            
+			
+			
+		</div>	
+		
+			-->        	
+
+
+                            	
+                            
+							
+							
+<div class="container" id="filter-item-category-clear"> <!-- ТУТ КНОПКА ОТОБРАЖАЕТСЯ ЕСЛИ ЕСТЬ ФИЛЬТРЫ --></div>
+							
+<p class="filter-title"><!--Текущий фильтр:--></p>
+                <div class="col-12">
+				<div class="col-12" id="filter-item-category"></div>
+                <div class="col-12" id="filter-item-type"></div>
+                <div class="col-12" id="filter-item-brand"></div>
+                <div class="col-12" id="filter-item-color"></div>
+                <div class="col-12" id="filter-item-offer"></div>  
+				</div>
+
+
+
+									
+									
+									
+									
+									
+									
+                        </div><!--ФИЛЬТР --> 
+
+						<!-- ADSENSE <div class="hidden-md-down side-rkl side-sticky"><img style="width:100%" src="/image/faq_banner.jpg" alt="Поиск блогеров с фильтром по цене, городу, ктегории и аудитории"></div> -->
+					</div>
+	
+						
+
+  
+  
+  
+			<br>	<br>		
+
+
+
+<style>
+.b-card-title {
+  margin: 0;
+  padding: 3px;
+  overflow: auto; /* очистить float */
+}
+.b-card-title label {
+  float: right;
+  white-space: nowrap; /* текст не будет переноситься на другую строку */
+}
+</style>
+
+					<!-- Start XP Col -->
+					<div class="col-lg-7">					
+							
+
+					<!--<div class="card-body card m-b-30">
+					
+					
+					
+					
+									сорт.
+									
+					</div>-->
+
+
+
+
+
+
+
+					
+									<div class="panel-body" id="result">
+										<!-- Search result will appeared here -->
+									</div>
+									<!-- Pagination -->
+									<div class="text-center">
+										<nav aria-label="Page navigation">
+											<ul class="pagination justify-content-center" id="pagination">
+												<!-- Pagination will appeared here -->
+											</ul>
+										</nav>
+									</div>
+									
+							
+							
+							
+							<!-- Pagination -->
+									<div class="form-group row">
+										<div class="col-6 col-md-6 col-sm-12">
+                                            <select class="form-control bg-primary text-white" id="sorting" name="sorting">
+                                                <option value="custom_rate" selected="selected">Ratiing</option>
+                                                <!--<option value="category_id">Категория</option>
+                                                <option value="type_id">Пол и класс</option>
+                                                <option value="city_id">Город</option>-->
+                                                <option value="rp_asc">RP: Ascending</option>
+                                                <option value="rp_desc">RP: Descending</option>
+												</select>
+                                        </div>
+
+                                        <div class="col-6 col-md-6 col-sm-12">
+                                            <select class="form-control bg-primary text-white" id="qty" name="qty">
+                                                <option value="5"  selected="selected">5</option>
+                                                <option value="10" >10</option>
+                                                <option value="30">30</option>
+                                            </select>
+                                        </div>
+                                    </div>						
+						<!-- /Pagination -->
+						
+						
+						
+						
+					</div>
+                    
+                    					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					<!-- End XP Col -->
+
+                    
+                    
+
+                </div>
+                <!-- End XP Row -->
+
+                
+
+            </div>
+            <!-- End XP Contentbar -->
+			
+		
+
+
+
+
+
+
+
+
+
+
+
+<!-- jQuery -->
+<script src="assets/vendor/jquery-3.2.1/jquery-3.2.1.min.js"></script>
+
+<!-- jQuery UI -->
+<script src="assets/vendor/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+<script>
+    var xhr = new XMLHttpRequest(); //create a new instance of ajax request
+
+    function faceted(page){
+
+        if(xhr !== 'undefined'){
+            xhr.abort(); //abort the previous ajax request if new request sent to server;
+        }
+
+        var csrf = "bolOKge9ACHvDkXn7EeHYU2vHRAyqyyX04tSy1lo";
+        var search = $("#search").val();
+        var categories = [];
+        var types = [];
+        var brands = [];
+        var city = [];
+        var offers = [];
+        var price = $("#amount").val();
+				var age = $("#age").val();
+        var sorting = $("#sorting").val();
+        var direction = $("#direction").val();
+        var qty = $("#qty").val();
+        var categoryName = [];
+        var typeName = [];
+        var brandName = [];
+        var colorName = [];
+        var offerName = [];
+        $(".category:checked").each(function(){
+            categories.push($(this).val());
+            categoryName.push(this.name);
+            $("#filter-item-category").html('<b>Langs: </b>'+categoryName);
+            $("#filter-item-category-clear").html('<button class="btn btn-danger" type="button" href="#" onclick="clearFilters()" style="width: 100%;" ><i class="mdi mdi-filter-outline"></i> RESET FILTERS</button>');
+        });
+        $(".brand:checked").each(function(){
+            brands.push($(this).val());
+            brandName.push(this.name);
+            $("#filter-item-brand").html('<b>Brand: </b>'+brandName);
+        });
+        $(".color:checked").each(function(){
+            city.push($(this).val());
+            colorName.push(this.name);
+            $("#filter-item-color").html('<b>Город(а): </b>'+colorName);
+        });
+        $(".type:checked").each(function(){
+            types.push($(this).val());
+            typeName.push(this.name);
+            $("#filter-item-type").html('<b>Пол: </b>'+typeName);
+        });
+        $(".offer:checked").each(function(){
+            offers.push($(this).val());
+            offerName.push(this.name);
+            $("#filter-item-offer").html('<b>Offer: </b>'+offerName);
+        });
+
+        if(categories.length == 0){
+            $("#filter-item-category").html('')
+        }
+        if(brands.length == 0){
+            $("#filter-item-brand").html('')
+        }
+        if(city.length == 0){
+            $("#filter-item-color").html('')
+        }
+        if(types.length == 0){
+            $("#filter-item-type").html('')
+        }
+        if(offers.length == 0){
+            $("#filter-item-offer").html('')
+        }
+
+        xhr = $.ajax({
+            url: 'faceted.php',
+            data: {_token:csrf,search:search,categories:categories,brands:brands,city:city,types:types,offers:offers,age:age,price:price,sorting:sorting,direction:direction,page:page,qty:qty},
+            type: 'get',
+            dataType: 'json',
+            beforeSend:function(){
+                $("#result").html('<div class="loader dual-loader mx-auto"></div>')
+            }
+        }).done(function(e){
+            $("#result").html(e['result']);
+            pagination(e['rows'],e['qty'],e['active']);
+            resultCount(e['theQuery']);
+        });
+    }
+</script>
+<script>
+    $(window).on("load",function(){
+        faceted();
+    })
+</script>
+<script>
+    $("#search").keyup(function(){
+        faceted();
+    })
+</script>
+<script>
+    $(".category,.type,.brand,.color,.offer").on("click",function(){
+        faceted();
+        //showHint('str');
+        //test();
+    });
+</script>
+<script>
+    $("#sorting,#direction,#qty").on('change',function(){
+        faceted();
+    });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+"use strict";
+    $( function() {
+        $( "#slider-range" ).ionRangeSlider({
+            range: true,
+			type: "double",
+			grid: true,
+			step: 100000,
+            min: 0,
+            max: 3000000,
+				from: 0,
+				to: 3000000,
+
+            onFinish: function (data) {
+                $( "#amount" ).val( $('#slider-range').data().from +
+        " - " + $('#slider-range').data().to );
+                faceted();
+			 $("#filter-item-category-clear").html('<button class="btn btn-danger" type="button" href="#" onclick="clearFilters()" style="width: 100%;" ><i class="mdi mdi-filter-outline"></i> RESET FILTERS</button>');
+
+
+            }
+        });
+        $( "#amount" ).val( $('#slider-range').data().from +
+        " - " + $('#slider-range').data().to );
+    } );
+</script>
+
+<script>
+"use strict";
+    $( function() {
+        $( "#slider-range2" ).ionRangeSlider({
+            range: true,
+			type: "double",
+			grid: true,
+			step: 1,
+            min: 0,
+            max: 55,
+				from: 0,
+				to: 55, //maxvalue
+
+            onFinish: function (data) {
+                $( "#age" ).val( $('#slider-range2').data().from +
+        " - " + $('#slider-range2').data().to );
+                faceted();
+            }
+        });
+        $( "#age" ).val( $('#slider-range2').data().from +
+        " - " + $('#slider-range2').data().to );
+    } );
+</script>
+
+
+
+			
+
+
+
+
+
+
+<script>
+    /* ajax pagination */
+    function pagination(rows,qty,active){
+        var q = parseInt(qty);
+        if(active == 1){
+            var nav = '<li class="page-item"><a aria-label="Previous" class="page-link" style="cursor:not-allowed"><span aria-hidden="true">&laquo;</span></a></li>';
+        }else{
+            nav = '<li class="page-item"><a class="page-link" onclick="faceted('+(parseInt(active)-1)+')" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>';
+        }
+        for(var i=0,j=1;i<rows;i+=q,j++){
+            if((j >= parseInt(active)-6) && (j <= parseInt(active)+8)){
+                nav += '<li class="page-item" id="a'+j+'"><a class="page-link" onclick="faceted('+(j)+')">'+j+'</a>';
+            }
+        }
+        if(active == Math.ceil(rows/qty)){
+            nav += '<li class="page-item"><a class="page-link" aria-label="Next" style="cursor:not-allowed"><span aria-hidden="true">&raquo;</span></a></li>';
+        }else{
+            nav += '<li class="page-item"><a class="page-link" onclick="faceted('+(parseInt(active)+1)+')" aria-label="Next"><span aria-hidden="true">&raquo;</span></a></li>';
+        }
+
+        $("#pagination").html(nav);
+
+        $("#a"+(parseInt(active))).addClass('active');
+    }
+</script>
+
+<script>
+    /** load more categories */
+    $("#loadCat").click(function(){
+        var categories = $(".category").length;
+        var csrf = "{{ csrf_token() }}";
+        $.ajax({
+            url: 'load_more_category.php',
+            data: {_token:csrf,categories:categories},
+            //type: 'post',
+            beforeSend: function(){
+                $("#collapseCat").addClass('loading');
+            }
+        }).done(function(e){
+            //$("#collapseCat #loadCat").before(e);
+            $("#collapseCat div").last().before(e);
+            $("#collapseCat").removeClass('loading');
+            $(".category").click(function(){
+                faceted();
+            });
+        })
+    });
+    /** load more brands */
+    $("#loadBrand").click(function(){
+        var brands = $(".brand").length;
+        var csrf = "{{ csrf_token() }}";
+        $.ajax({
+            url: 'load_more_brand.php',
+            data: {_token:csrf,brands:brands},
+            //type: 'post',
+            beforeSend: function(){
+                $("#collapseBrand").addClass('loading');
+            }
+        }).done(function(e){
+            $("#collapseBrand #loadBrand").before(e);
+            $("#collapseBrand").removeClass('loading');
+            $(".brand").click(function(){
+                faceted();
+            });
+        })
+    });
+    /** load more types */
+    $("#loadType").click(function(){
+        var types = $(".type").length;
+        var csrf = "{{ csrf_token() }}";
+        $.ajax({
+            url: 'load_more_type.php',
+            data: {_token:csrf,types:types},
+            //type: 'post',
+            beforeSend: function(){
+                $("#collapseType").addClass('loading');
+            }
+        }).done(function(e){
+            $("#collapseType #loadType").before(e);
+            $("#collapseType").removeClass('loading');
+            $(".type").click(function(){
+                faceted();
+            });
+        })
+    });
+    /** load more city */
+    $("#loadColor").click(function(){
+        var city = $(".color").length;
+        var csrf = "{{ csrf_token() }}";
+        $.ajax({
+            url: 'load_more_color.php',
+            data: {_token:csrf,city:city},
+            //type: 'post',
+            beforeSend: function(){
+                $("#collapseColor").addClass('loading');
+            }
+        }).done(function(e){
+            $("#collapseColor #loadColor").before(e);
+            $("#collapseColor").removeClass('loading');
+            $(".color").click(function(){
+                faceted();
+            });
+        })
+    });
+    /** load more offers */
+    $("#loadOffer").click(function(){
+        var offers = $(".offer").length;
+        var csrf = "{{ csrf_token() }}";
+        $.ajax({
+            url: 'load_more_offer.php',
+            data: {_token:csrf,offers:offers},
+            //type: 'post',
+            beforeSend: function(){
+                $("#collapseOffer").addClass('loading');
+            }
+        }).done(function(e){
+            $("#collapseOffer #loadOffer").before(e);
+            $("#collapseOffer").removeClass('loading');
+            $(".offer").click(function(){
+                faceted();
+            });
+        })
+    });
+</script>
+
+<script>
+    /**
+     * Clear all filters
+     * Added 2018.06.15 03:58AM
+     */
+    function clearFilters(){
+        $("#search").val("");
+        $(".category").prop('checked',false);
+        $(".type").prop('checked',false);
+        $(".brand").prop('checked',false);
+        $(".color").prop('checked',false);
+        $(".offer").prop('checked',false);
+        $("#amount").val('0 - 3000000');
+		$("#age").val('0 - 70');
+        faceted();
+$( "#slider-range" ).data("ionRangeSlider").update({ from: 0, to: 3000000 });	
+$("#filter-item-category-clear").html('');
+
+
+    }
+</script>
+
+
+
+
+		
+
+
+
+
+
+
+
+<script src="../cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.10/clipboard.min.js"></script>
+
+
+	
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+                </div>
+
+                </div>
+
+
+
+
+
+
+	<!--  ОДИН ЗАКРЫВАЮЩИЙ /DIV В ФУТЕРЕ!	-->	
+<link href="assets/css/components/tabs-accordian/custom-tabs.css" rel="stylesheet" type="text/css" />
+
+<div class="modal fade" id="whatnextModal" tabindex="-1" role="dialog" aria-labelledby="whatnextModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header" style="border-bottom: 1px solid #ecac13;">
+            <h5 class="modal-title" id="exampleModalCenterTitle">WHATS NEXT?</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color:white">
+                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#fff" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+            </button>
+            </div>
+
+        <div class="/*modal-footer*/ modal-body" style="border-top: 1px solid #ecac13; justify-content: safe flex-start;">
+            We well write you by your contacts. Or you can write for us right now
+        </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Modal CHECKOUT -->
+<div class="modal fade" id="checkuotModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header" style="border-bottom: 1px solid #ecac13;">
+            <h5 class="modal-title" id="exampleModalCenterTitle">CONTACT FORM</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color:white">
+                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#fff" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+            </button>
+            </div>
+
+        <div class="/*modal-footer*/ modal-body" style="border-top: 1px solid #ecac13; justify-content: safe flex-start;">
+
+            <form class="needs-validation" novalidate action="javascript:void(0);">
+
+
+
+
+
+
+            
+
+
+            
+
+
+<br>
+
+
+
+
+
+
+
+
+<div class="modal-header" style="border-bottom: 1px solid #ecac13;">
+            <h5 class="modal-title" id="exampleModalCenterTitle">How to contact you?</h5>
+</div>
+
+                                    <div class="rounded-pills-icon">
+                                    
+                                    <ul class="nav nav-pills mb-4 mt-3  justify-content-center" id="rounded-pills-icon-tab" role="tablist">
+                                        <li class="nav-item ml-2 mr-2">
+                                            <a onclick="loadInputs('whatsapp')" class="nav-link mb-2 active text-center" id="rounded-pills-icon-home-tab" data-toggle="pill" href="#rounded-pills-icon-home" role="tab" aria-controls="rounded-pills-icon-home" aria-selected="true"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+  <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+</svg> WhatsApp</a>
+                                        </li>
+                                        <li class="nav-item ml-2 mr-2">
+                                            <a onclick="loadInputs('telegram')" class="nav-link mb-2 text-center" id="rounded-pills-icon-profile-tab" data-toggle="pill" href="#rounded-pills-icon-profile" role="tab" aria-controls="rounded-pills-icon-profile" aria-selected="false"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-telegram" viewBox="0 0 16 16">
+  <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z"/>
+</svg> Telegram</a>
+                                        </li>
+                                        <li class="nav-item ml-2 mr-2">
+                                            <a onclick="loadInputs('line')" class="nav-link mb-2 text-center" id="rounded-pills-icon-contact-tab" data-toggle="pill" href="#rounded-pills-icon-contact" role="tab" aria-controls="rounded-pills-icon-contact" aria-selected="false"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-phone"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg> Line App</a>
+                                        </li>
+
+                                        <li class="nav-item ml-2 mr-2">
+                                            <a onclick="loadInputs('discord')" class="nav-link mb-2 text-center" id="rounded-pills-icon-settings-tab" data-toggle="pill" href="#rounded-pills-icon-settings" role="tab" aria-controls="rounded-pills-icon-settings" aria-selected="false"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-discord" viewBox="0 0 16 16">
+  <path d="M6.552 6.712c-.456 0-.816.4-.816.888s.368.888.816.888c.456 0 .816-.4.816-.888.008-.488-.36-.888-.816-.888zm2.92 0c-.456 0-.816.4-.816.888s.368.888.816.888c.456 0 .816-.4.816-.888s-.36-.888-.816-.888z"/>
+  <path d="M13.36 0H2.64C1.736 0 1 .736 1 1.648v10.816c0 .912.736 1.648 1.64 1.648h9.072l-.424-1.48 1.024.952.968.896L15 16V1.648C15 .736 14.264 0 13.36 0zm-3.088 10.448s-.288-.344-.528-.648c1.048-.296 1.448-.952 1.448-.952-.328.216-.64.368-.92.472-.4.168-.784.28-1.16.344a5.604 5.604 0 0 1-2.072-.008 6.716 6.716 0 0 1-1.176-.344 4.688 4.688 0 0 1-.584-.272c-.024-.016-.048-.024-.072-.04-.016-.008-.024-.016-.032-.024-.144-.08-.224-.136-.224-.136s.384.64 1.4.944c-.24.304-.536.664-.536.664-1.768-.056-2.44-1.216-2.44-1.216 0-2.576 1.152-4.664 1.152-4.664 1.152-.864 2.248-.84 2.248-.84l.08.096c-1.44.416-2.104 1.048-2.104 1.048s.176-.096.472-.232c.856-.376 1.536-.48 1.816-.504.048-.008.088-.016.136-.016a6.521 6.521 0 0 1 4.024.752s-.632-.6-1.992-1.016l.112-.128s1.096-.024 2.248.84c0 0 1.152 2.088 1.152 4.664 0 0-.68 1.16-2.448 1.216z"/>
+</svg> Discord</a>
+                                        </li>
+
+                                        <li class="nav-item ml-2 mr-2">
+                                            <a onclick="loadInputs('instagram')" class="nav-link mb-2 text-center" id="rounded-pills-icon-settings-tab" data-toggle="pill" href="#rounded-pills-icon-settings" role="tab" aria-controls="rounded-pills-icon-settings" aria-selected="false"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+  <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+</svg> Instagram</a>
+                                        </li>
+
+                                        <li class="nav-item ml-2 mr-2">
+                                            <a onclick="loadInputs('facebook')" class="nav-link mb-2 text-center" id="rounded-pills-icon-settings-tab" data-toggle="pill" href="#rounded-pills-icon-settings" role="tab" aria-controls="rounded-pills-icon-settings" aria-selected="false"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+  <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+</svg> Facebook</a>
+                                        </li>
+                                    </ul>
+                                    
+
+
+
+
+                                </div>
+
+
+
+
+                                <!--
+                                    <div class="input-group mb-4">
+                                      <div class="input-group-prepend">
+                                        <span class="input-group-text" id="basic-addon5">My Email:</span>
+                                      </div>
+                                      <input type="text" class="form-control" placeholder="player@icloud.com" aria-label="Email" name="order_email" required>
+                                    </div>
+                                -->
+                                    <div class="input-group mb-4">
+                                        
+
+
+
+                                    <!-- ДИНАМИЧЕСКИЙ БЛОК  ПОДСТАНОВКИ ИНПУТОВ -->
+                                    <div id="inputs_content" style="width: 100%;">
+                                        <span>
+
+                                            <p>We will write to you on WhatsApp or another messenger available by number</p>
+                                            <input type="tel" class="form-control" value="+1" placeholder="+1... Phone in internation format!" aria-label="hone" name="order_phone" id="telephone" required>
+                                            <input type="hidden" name="social" value="whatsapp">
+
+                                        </span>
+                                    </div>
+                                    <!-- ДИНАМИЧЕСКИЙ БЛОК  ПОДСТАНОВКИ ИНПУТОВ -->
+
+
+
+
+
+                                        <div class="valid-feedback">
+                                            Looks good!
+                                        </div>
+                                        <div class="invalid-feedback">
+                                            Please fill the phone
+                                        </div>
+
+
+                                    </div>
+                                <!--
+                                    <div class="input-group mb-4" style="width: 100%">
+                                      <div class="input-group-prepend">
+                                        <span class="input-group-text" id="basic-addon5">OS:</span>
+                                      </div>
+                                        <select type="select" class="form-control" name="order_os">
+                                            <option>iOS</option>
+                                            <option>Android</option>
+                                        </select>
+                                    </div>
+                                -->
+
+
+
+                                    <input type="hidden" name="f_user_id" value="">
+                        
+                                    <input type="hidden" name="f_sid" value="54c4b6e016ff46fc08ce883ef8f739a5">
+
+                                    <input type="hidden" name="f_item_id" value="">
+                                    
+                                    <input type="hidden" name="f_url" value="/finder">
+                                    <input type="hidden" name="f_ip" value="92.253.28.240">
+
+
+
+                <button class="btn btn-buy" id="checkout_send"  type="submit" style="width: 100%" onclick="gtag('event', 'clcik', { 'event_category':'car', 'event_label':'submit'});">Send</button>
+            </form>
+
+
+<hr>
+                            <h5 class="modal-title center text-center">OR click to contact us:</h5>
+                <div class="center text-center">
+                <a href="https://api.whatsapp.com/send?phone=380955119073&amp;text=Hello!%20I%20want%20to%20buy%20%20(with%20%20stars)"  id="whatsapp_buy" target="_blank">
+                    <span id="whatsapp_buy" name="whatsapp_buy" onclick="ga('send', 'event', 'button', 'click');">
+                        <img src="../i.pinimg.com/originals/11/8a/e3/118ae31cfcff8080d834e3e4e646d8e7.png" height="42px">
+                    </span>
+                </a>
+                <a href="tg://msg?text=Hello!%20I%20want%20to%20buy%20%20(with%20%20stars)&to=+79175778448"  id="telegram_buy" target="_blank">
+                    <span id="whatsapp_buy" name="whatsapp_buy" onclick="ga('send', 'event', 'button', 'click');">
+                        <img src="../ru.forexmagnates.com/wp-content/uploads/2016/10/faenza_telegram_by_xaviermartinezf-d7qafub.html" height="48px">
+                    </span>
+                </a>
+                <a href="https://discord.com/users/boyko#7599"  id="discord_buy" target="_blank">
+                    <span id="whatsapp_buy" name="whatsapp_buy" onclick="ga('send', 'event', 'button', 'click');">
+                        <img src="../cdn2.iconfinder.com/data/icons/social-media-2304/64/5938742.png" height="45px">
+                    </span>
+                </a>
+                </div>
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+       <!-- было тут -->
+
+
+           
+
+
+        </div>
+    </div>
+</div>
+
+<!-- END Modal CHECKOUT -->
+
+
+
+
+
+
+
+
+<!-- СКРИПТ удаления из корзины -->
+<script type="text/javascript">
+
+
+    function delete_cart_item(db_itemid,listid) {
+
+
+
+    /* ===== Parameter ===== */
+    
+            swal({
+                title: 'Вы уверенны?',
+                text: "Вы сможете добавить блогера снова, если запомните его ник",
+                type: 'warning',
+                showCancelButton: true,
+                confirmButtonText: 'Да, удалить!',
+                cancelButtonText: 'Нет, отмена!',
+                confirmButtonClass: 'btn btn-success',
+                cancelButtonClass: 'btn btn-danger m-l-10',
+                buttonsStyling: false
+            }).then(function () {
+              // alert("DEL order item with ID "+ db_itemid +" done");
+    var item_id = db_itemid;
+
+           $.ajax(
+           {
+             type: "POST",
+             url: "//dragracing.space/contr/ajax_delete_cart_item.php",
+             data:  "item_id="+item_id,
+             success: function(response) {
+             }
+     }
+     );
+document.getElementById(listid).remove();
+                swal(
+                    'Удалено!',
+                    'Блогер удалён из списка.',
+                    'success'
+                    )
+            }, function (dismiss) {
+                if (dismiss === 'cancel') {
+                    swal(
+                        'Отменено',
+                        'Список в целости и сохранности :)',
+                        'error'
+                        )
+                }
+            })
+
+
+
+
+
+
+}
+
+
+
+
+    function delete_cart_item(db_itemid,listid) {
+
+
+
+    /* ===== Parameter ===== */
+    
+            swal({
+                title: 'You are sure?',
+                text: "If you change your mind, you will have to add the item to the cart again.",
+                type: 'warning',
+                showCancelButton: true,
+                confirmButtonText: 'Yes, delete',
+                cancelButtonText: 'No, cancel',
+                confirmButtonClass: 'btn btn-success',
+                cancelButtonClass: 'btn btn-danger m-l-10',
+                buttonsStyling: false
+            }).then(function () {
+              // alert("DEL order item with ID "+ db_itemid +" done");
+    var item_id = db_itemid;
+
+           $.ajax(
+           {
+             type: "POST",
+             url: "//dragracing.space/contr/ajax_delete_cart_item.php",
+             data:  "item_id="+item_id,
+             success: function(response) {
+             }
+     }
+     );
+document.getElementById(listid).remove();
+                swal(
+                    'Removed!',
+                    'The item has been removed from the cart.',
+                    'success'
+                    )
+            }, function (dismiss) {
+                if (dismiss === 'cancel') {
+                    swal(
+                        'Canceled',
+                        'Cart has not changed :)',
+                        'error'
+                        )
+                }
+            })
+
+
+
+
+
+
+}
+</script>
+
+
+
+<!-- СКРИПТ ДОБАВЛЕНИЯ В КОРЗИНУ БЕЗ ЛОГИНА -->
+        <script type="text/javascript">
+        function addtocart(item_id){
+
+       var item = item_id;
+       var sid = $('input[name=sid]').val();
+       var url = $('input[name=url]').val();
+       var ip = $('input[name=ip]').val();
+       var user_id = $('input[name=user_id]').val();
+       
+        var item_id = $('input[name=item_id]').val();
+
+
+                $.ajax({
+                    type: 'POST',
+                    url: 'https://dragracing.space/add-to-cart.php',
+                    data: "item="+item+"&sid="+sid+"&url="+url+"&ip="+ip+"&user_id="+user_id+"&item_id="+item_id+"&ip="+ip,
+                    success: function (data) {
+         //alert(user_id);
+
+
+
+
+                   },
+                    complete: function (data) {
+                            // Schedule the next
+        $('#checkuotModal').modal("show");
+
+        
+                    }
+            });
+        };
+
+        </script>
+<!-- END СКРИПТ ДОБАВЛЕНИЯ В КОРЗИНУ БЕЗ ЛОГИНА -->
+
+
+
+<!-- СКРИПТ ОТПРАВКИ ЗАКАЗА И ВАЛИДАЦИИ ФОРМЫ  -->
+<script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+(function() {
+  'use strict';
+  
+
+window.addEventListener('load', function() {
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+          form.classList.add('was-validated');
+          alert('Enter your contacts so that we can write to you to clarify the details of the order');
+        } else {
+        form.classList.add('was-validated');
+        // alert('All ok');
+
+                                    var sid = $('input[name=f_sid]').val();
+                                   var url = $('input[name=f_url]').val();
+                                   var ip = $('input[name=f_ip]').val();
+                                   var user_id = $('input[name=f_user_id]').val();
+
+                                   var order_email = $('input[name=order_email]').val();
+                                   var order_phone = $('input[name=order_phone]').val();
+                                   var order_os = $('select[name=order_os]').val();
+                                   var social = $('input[name=social]').val();
+
+
+                                            $.ajax({
+                                                type: 'POST',
+                                                url: 'https://dragracing.space/add-order.php',
+                                                data: "order_os="+order_os+"&sid="+sid+"&url="+url+"&ip="+ip+"&user_id="+user_id+"&order_email="+order_email+"&order_phone="+order_phone+"&social="+social,     
+                                                success: function (data) {
+                                    //alert(order_os);
+
+                                               },
+                                                complete: function (data) {
+                                                        // Schedule the next
+                                                        $('#checkuotModal').modal('hide');
+                                                        (function ($) {
+                                                            'use strict';
+                                                                            swal({
+
+                                                                                title: 'Done!',
+                                                                                html: 'We will soon write to you at the indicated number (<strong>'+order_phone+'</strong>) in the messenger',
+                                                                                type: 'success',
+                                                                                timer: 6600
+                                                                            }).then(
+                                                                            function () {
+                                                                            },
+                                                                            function (dismiss) {
+                                                                                if (dismiss === 'timer') {
+                                                                                    console.log('I was closed by the timer'),
+                                                                                    $('#whatnextModal').modal('show');
+                                                                                }
+                                                                            }
+                                                                            )
+                                                        })(jQuery)
+
+                                                }
+                                        });
+
+        }
+      }, false);
+    });
+}, false);
+
+})();
+</script>
+<!-- END СКРИПТ ОТПРАВКИ ЗАКАЗА И ВАЛИДАЦИИ ФОРМЫ  -->
+
+
+
+
+<!-- СКРИПТ ОБНОВЛЕНИЯ СОДЕРЖИМОГО КОРЗИНЫ -->
+<script>
+function cart_update(){
+
+            $.ajax({
+                    type: 'POST',
+                    url: '/cart_update.php',
+                    data: $(this).serialize(),
+                    dataType: 'text json',
+                    success: function (data) {
+
+var cart_items_header_html = '<a class="dropdown-item">
+                                <div class="">
+                                    <div class="media">
+                                        <div class="user-img">
+                                            <div class="avatar avatar-xl">
+                                                <span class="avatar-title rounded-circle" style="background-color: rgb(10 10 10 / 16%);"><img src="https://dragracing.space/assets/img/car_icons/" style="margin-right: 0px;"></span>
+                                            </div>
+                                        </div>
+                                        <div class="media-body">
+                                            <div class="">
+                                                <h5 class="usr-name"></h5>
+                                                <p class="msg-title">18.5$</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>';
+ $('#cart_header_update').replaceWith(cart_items_header_html);
+ 
+ 
+
+ var cart_items_html = '   ';
+ $('#cart_update').replaceWith(cart_items_html);
+
+
+ 
+        }
+        })
+
+}
+
+
+</script>
+
+
+
+
+
+    <!-- BEGIN THEME GLOBAL STYLE -->
+    <script src="assets/js/scrollspyNav.js"></script>
+    <script src="plugins/sweet-alert2/sweetalert2.min.js"></script>
+    <!-- END THEME GLOBAL STYLE -->  
+
+
+
+
+
+       
+
+
+
+
+
+
+
+
+</div>
+            <div class="footer-wrapper">
+                <div class="footer-section f-section-1">
+                    <p class="">Copyright © 2021 </p>
+                </div>
+                <div class="footer-section f-section-2">
+                    <p class="">Coded with <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></p>
+                </div>
+            </div>
+        </div>
+        <!--  END CONTENT AREA  -->
+
+    </div>
+    <!-- END MAIN CONTAINER -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- BEGIN GLOBAL MANDATORY SCRIPTS -->
+    <script src="assets/js/libs/jquery-3.1.1.min.js"></script>
+    <script src="bootstrap/js/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="assets/js/app.js"></script>
+            <script src="bootstrap/js/popper.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            App.init();
+        });
+    </script>
+    	
+		
+
+
+<!-- Нижний рекламный бар WHATSAPP  -->
+
+
+            <div class="viber_class visible-xs visible-sm hidden-lg hidden-md">
+        <div>
+            <a href="https://gamewise.org/csr-racing-2-best-fastest-cars/" rel="nofollow" target="_blank"> <img src="../gamehag.com/img/games/logo/csr-racing-2.png" alt="CSR 2 best cars"> Best cars list</a>        </div>
+    </div>
+    <style>
+    .viber_class{right:0;left:0;bottom:0;display:block;width:100%;position:fixed;bottom:0;z-index:25}
+    .viber_class > div{display:block;background: rgb(0 0 0 / 85%);
+        border-top: 1px #012d00 solid;padding:4px;/*border-radius:5px 5px 0 0*/}
+    .viber_class > div > a{color: #ffffff;margin:5px;display:block;text-align:center;margin-left:-30px;font-size:17px;text-decoration: none;}
+    .viber_class > div > a > img{width:30px;height:30px;margin: 0 2px 0px 0;}
+    </style>
+
+<!-- END Нижний рекламный бар WHATSAPP  -->
+
+
+
+
+
+
+<script charset="UTF-8" src="../web.webpushs.com/js/push/767680e48296640697b21f41d92b203a_1.js" async></script>
+
+
+
+
+
+  <link rel="stylesheet" href="assets/css/intlTelInput.css">
+  <script src="assets/js/intlTelInput.js"></script>
+  <script>
+    var input = document.querySelector("#telephone");
+    window.intlTelInput(input, {
+      // allowDropdown: false,
+     // autoHideDialCode: true,
+     //  autoPlaceholder: "polite",
+      // dropdownContainer: document.body,
+      // excludeCountries: ["us"],
+      // formatOnDisplay: true,
+       geoIpLookup: function(callback) {
+         $.get("https://ipinfo.io/", function() {}, "jsonp").always(function(resp) {
+           var countryCode = (resp && resp.country) ? resp.country : "";
+           callback(countryCode);
+         });
+       },
+      // hiddenInput: "full_number",
+       initialCountry: "auto",
+      // localizedCountries: { 'de': 'Deutschland' },
+      // nationalMode: false,
+      // onlyCountries: ['us', 'gb', 'ch', 'ca', 'do'],
+      // placeholderNumberType: "MOBILE",
+      preferredCountries: ['us', 'de', 'it', 'fr', 'ru'],
+      // separateDialCode: false,
+      utilsScript: "/assets/js/utils.js",
+    });
+  </script>
+
+
+
+
+
+
+<script type="text/javascript">
+function loadInputs(var_social) {
+        if(var_social == "whatsapp") {
+    html = '<p>We will write to you on WhatsApp by this phone number</p><input type="tel" class="form-control" value="+1" placeholder="+1... Phone in internation format!" aria-label="hone" name="order_phone" id="telephone" required><input type="hidden" name="social" value="'+var_social+'">';
+
+    }
+        if(var_social == "telegram") {
+    html = '<p>We will write to you on Telegram by this phone number</p><input type="tel" class="form-control" value="+1" placeholder="+1... Phone in internation format!" aria-label="hone" name="order_phone" id="telephone" required><input type="hidden" name="social" value="'+var_social+'">';
+    }
+        if(var_social == "instagram") {
+    html = '<p>We will write to you on Instagram by this nickname</p><input type="text" class="form-control" value="@" placeholder="@csr2crews (example)" aria-label="hone" name="order_phone" required><input type="hidden" name="social" value="'+var_social+'">';
+    }
+        if(var_social == "discord") {
+    html = '<p>We will write to you on Discord by this nickname#tag</p><input type="text" class="form-control" value="" placeholder="boyko#7599 (example)" aria-label="hone" name="order_phone" required><input type="hidden" name="social" value="'+var_social+'">';
+    }
+        if(var_social == "facebook") {
+    html = '<p>We will write to you on Facebook by this link</p><input type="text" class="form-control" value="" placeholder="Link to your FB" aria-label="hone" name="order_phone" required><input type="hidden" name="social" value="'+var_social+'">';
+    }
+        if(var_social == "line") {
+    html = '<p>We will write to you on Line App by this phone number</p><input type="tel" class="form-control" value="+1" placeholder="+1... Phone in internation format!" aria-label="hone" name="order_phone" id="telephone" required><input type="hidden" name="social" value="'+var_social+'">';
+    }
+
+        $('#inputs_content span').replaceWith("<span>" + html + "</span>");
+
+        var input = document.querySelector("#telephone");
+    window.intlTelInput(input, {
+      // allowDropdown: false,
+     // autoHideDialCode: true,
+     //  autoPlaceholder: "polite",
+      // dropdownContainer: document.body,
+      // excludeCountries: ["us"],
+      // formatOnDisplay: true,
+       geoIpLookup: function(callback) {
+         $.get("https://ipinfo.io/", function() {}, "jsonp").always(function(resp) {
+           var countryCode = (resp && resp.country) ? resp.country : "";
+           callback(countryCode);
+         });
+       },
+      // hiddenInput: "full_number",
+       initialCountry: "auto",
+      // localizedCountries: { 'de': 'Deutschland' },
+      // nationalMode: false,
+      // onlyCountries: ['us', 'gb', 'ch', 'ca', 'do'],
+      // placeholderNumberType: "MOBILE",
+      preferredCountries: ['us', 'de', 'it', 'fr', 'ru'],
+      // separateDialCode: false,
+      utilsScript: "/assets/js/utils.js",
+    });
+
+
+}
+
+</script>
+
+
+
+ <script src="bootstrap/js/popper.min.js"></script>
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+    <script>
+        setTimeout(function () {
+         $('#shop_modal').modal('show');
+         gtag('event', 'clcik', { 'event_category':'popup_shop_show', 'event_label':'show'});
+        }, 8888); // время в мс
+     </script>
+
+
+
+
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="shop_modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalCenterTitle">We have a shop for you</h5>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                      <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <h4 class="modal-heading mb-4 mt-2">How to buy?</h4>
+                                                        <p class="modal-text">The buy button will redirect you to my WhatsApp. Meet me and discuss purchase details there </p>
+                                                        <img src="assets/img/offers/eg300.jpg" style="max-width:100%;">
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button class="btn" data-dismiss="modal"><i class="flaticon-cancel-12"></i> I know</button>
+                                                    <button type="button" class="btn btn-primary" onclick="gtag('event', 'clcik', { 'event_category':'shop', 'event_label':'popup'});"><a href="shop.html" target="_blank"> Wow! Show me</a></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+<!-- Global site tag (gtag.js) - Google Ads: 767259892 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-767259892"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-767259892');
+</script>
+
+
+
+
+
+<!-- Start of LiveChat (www.livechat.com) code -->
+<script>
+    window.__lc = window.__lc || {};
+    window.__lc.license = 14035029;
+    ;(function(n,t,c){function i(n){return e._h?e._h.apply(null,n):e._q.push(n)}var e={_q:[],_h:null,_v:"2.0",on:function(){i(["on",c.call(arguments)])},once:function(){i(["once",c.call(arguments)])},off:function(){i(["off",c.call(arguments)])},get:function(){if(!e._h)throw new Error("[LiveChatWidget] You can't use getters before load.");return i(["get",c.call(arguments)])},call:function(){i(["call",c.call(arguments)])},init:function(){var n=t.createElement("script");n.async=!0,n.type="text/javascript",n.src="../cdn.livechatinc.com/tracking.js",t.head.appendChild(n)}};!n.__lc.asyncInit&&e.init(),n.LiveChatWidget=n.LiveChatWidget||e}(window,document,[].slice))
+</script>
+<noscript><a href="https://www.livechat.com/chat-with/14035029/" rel="nofollow">Chat with us</a>, powered by <a href="https://www.livechat.com/?welcome" rel="noopener nofollow" target="_blank">LiveChat</a></noscript>
+<!-- End of LiveChat code -->
+                        
+    <!-- BEGIN PAGE LEVEL SCRIPTS -->
+
+    
+    <!-- END PAGE LEVEL SCRIPTS -->
+	
+	
+
+
+
+    <!-- BEGIN PAGE LEVEL SCRIPTS -->
+    <script src="assets/js/scrollspyNav.js"></script>
+    <script src="plugins/flatpickr/flatpickr.js"></script>
+
+    <!-- END PAGE LEVEL SCRIPTS -->
+
+    <!--Plugin JavaScript file-->
+    <script src="../cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script> 
+
+</body>
+
+<!-- Mirrored from dragracing.space/finder by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 20 Sep 2023 12:30:14 GMT -->
+</html>
